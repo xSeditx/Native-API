@@ -1,9 +1,8 @@
-====================================================================================================================================== 
+___
 ### This Library is Intended to be a bear bones drop in replacement for STL threading and Synchronization Library                        
 ### This is a WIP and all code is subject to change.																					 
 ### Anyone considering using this in its current form in their project is highly discouraged from doing so								 
-====================================================================================================================================== 
-
+___
 
 ___
 #### TODO: 
