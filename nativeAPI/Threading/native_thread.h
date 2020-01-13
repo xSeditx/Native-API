@@ -28,10 +28,15 @@
 #include <Windows.h>
 
 #define Print(x)              std::cout << x << "\n"
-#define NO_DISCARD            [[nodiscard]]
 #define THREAD_ERROR(x)       Print("Error: ~" << x << "~"); __debugbreak()                           //                                    //
 #define SIZEOF_WIN_MUTEX      80
 #define DEFAULT_SPIN_COUNT    1024
+
+#if __cplusplus > 201703L
+#    define NO_DISCARD            [[nodiscard]]
+#else
+#    define NO_DISCARD  
+#endif
 
 
 namespace native
