@@ -15,7 +15,7 @@ void Thread_TestFunction()
 }
 
 int main()
-{
+{ 
 	ThreadVector.push_back(1);
 	native::thread Thread0(Thread_TestFunction);   /*                                       */
 	native::thread Thread1(Thread_TestFunction);   /*       Spawn a Number of Threads       */
